@@ -17,14 +17,14 @@
             <img src="./images/logo.png" alt="Career Guide" class="w-[200px]">
           </a>
           <nav id="main-nav" class="hidden absolute left-4 right-4 top-[80px] z-10 flex-col gap-2 rounded-2xl border border-slate-200 bg-white p-3 shadow-xl md:static md:flex md:flex-row md:items-center md:justify-center md:border-0 md:p-0 md:shadow-none" aria-label="Main navigation">
-            <a href="../index.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Home</a>
-            <a href="internship.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600 bg-green-50 text-green-600 font-semibold">Internships</a>
-            <a href="./career-guide.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Career Guide</a>
-            <a href="./resources.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Resources</a>
-            <a href="./profile.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">My Profile</a>
+            <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Home</a>
+            <a href="#" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600 bg-green-50 text-green-600 font-semibold">Internships</a>
+            <a href="index.html#categories" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Career Guide</a>
+            <a href="index.html#resources" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Resources</a>
+            <a href="index.html#profile" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">My Profile</a>
           </nav>
           <div class="flex items-center gap-3">
-            <a href="login.html" class="hidden items-center justify-center gap-2 rounded-xl border border-teal-600/20 bg-white px-5 py-3 font-semibold text-teal-700 sm:inline-flex">Login</a>
+            <a href="index.html" class="hidden items-center justify-center gap-2 rounded-xl border border-teal-600/20 bg-white px-5 py-3 font-semibold text-teal-700 sm:inline-flex">Login</a>
             <button id="menu-toggle" class="flex h-[42px] w-[42px] items-center justify-center rounded-xl border border-slate-200 bg-white md:hidden" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
           </div>
         </div>
@@ -242,18 +242,43 @@
       </main>
 
       <footer class="mt-auto bg-[black] text-white/80">
-        <div class="mx-4 flex min-h-[72px] items-center justify-between gap-5 md:mx-8 lg:mx-[128px]">
-          <img src="./images/logo dark mode.jpg" alt="" class="w-[200px]">
-          <div class="flex items-center gap-5 flex-wrap">
-            <a href="../index.html">Home</a>
-            <a href="internship.html">Internships</a>
-            <a href="./career-guide.html">Career Guide</a>
-            <a href="./resources.html">Resources</a>
+        <div class="mx-4 flex min-h-[72px] flex-col items-start gap-5 py-6 md:mx-8 md:flex-row md:items-center md:justify-between md:py-0 lg:mx-[128px]">
+          <img src="./images/logo dark mode.jpg" alt="Career Guide" class="w-[200px] max-w-full">
+          <div class="flex w-full flex-wrap items-center gap-x-5 gap-y-3 md:w-auto md:justify-end">
+            <a href="index.html">Home</a>
+            <a href="#">Internships</a>
+            <a href="index.html#categories">Career Guide</a>
+            <a href="index.html#resources">Resources</a>
           </div>
         </div>
       </footer>
     </div>
-    <script src="./src/main.js"></script>
+    <script>
+      const menuToggle = document.querySelector('#menu-toggle');
+      const mainNav = document.querySelector('#main-nav');
+      const menuIcon = menuToggle.querySelector('i');
+
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+        mainNav.classList.toggle('hidden', isOpen);
+        mainNav.classList.toggle('flex', !isOpen);
+        menuIcon.classList.toggle('fa-bars', isOpen);
+        menuIcon.classList.toggle('fa-xmark', !isOpen);
+      });
+
+      mainNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          mainNav.classList.add('hidden');
+          mainNav.classList.remove('flex');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.setAttribute('aria-label', 'Open menu');
+          menuIcon.classList.add('fa-bars');
+          menuIcon.classList.remove('fa-xmark');
+        });
+      });
+    </script>
 
   </body>
 </html>

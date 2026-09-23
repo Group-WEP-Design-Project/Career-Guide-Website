@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="bg-white text-ink font-family-[Poppins]">
+    <nav class="border-b bg-white">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-12">
+            <a href="./index.html" class="flex items-center gap-2" aria-label="Career Guide home">
+                <img src="images/logo.png" alt="Career Guide" class="h-9 w-auto object-contain">
+            </a>
+            <div class="hidden items-center gap-7 text-[11px] font-semibold text-slate-700 md:flex">
+                <a class="text-brand" href="./index.html">Home</a>
+                <a class="hover:text-brand" href="./internship.html">Internship</a>
+                <a class="hover:text-brand" href="./categories.html">Career</a>
+                <a class="hover:text-brand" href="./resources.html">Resources</a>
+                <a class="hover:text-brand" href="./profile.html">My Profile</a>
+                <button
+                    class="rounded border border-brand px-4 py-1.5 text-brand transition hover:bg-brand hover:text-white">Login</button>
+            </div>
+            <button class="rounded p-2 text-deep md:hidden" aria-label="Open menu">
+                <i class="fa-solid fa-bars h-5 w-5"></i>
+            </button>
+        </div>
+    </nav>
+    <main class="mx-auto max-w-6xl px-5 pb-10">
+        <section class="grid items-center gap-8 py-10 md:grid-cols-[1.35fr_1fr] md:py-14">
+            <div class="fade-up">
+                <p class="mb-4 inline-flex rounded-full bg-white px-3 py-1 text-[9px] font-bold text-brand shadow-sm">
+                    Career growth starts here</p>
+                <h1 class="max-w-lg text-3xl font-bold leading-tight text-ink md:text-4xl">Find Your Internship.<br>
+                    <span class="text-deep">Build Your Future.</span>
+                </h1>
+                <p class="mt-4 max-w-md text-xs leading-6 text-slate-600">Discover internship opportunities, explore
+                    career paths, and develop the skills you need for your future career.</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="#opportunities"
+                        class="rounded bg-brand px-4 py-2 text-[10px] font-bold text-white shadow-sm transition hover:bg-deep">Find
+                        Internships</a>
+                    <a href="#categories"
+                        class="rounded border border-brand bg-white px-4 py-2 text-[10px] font-bold text-brand transition hover:bg-emerald-50">Explore
+                        Career Guide</a>
+                </div>
+                <div class="mt-7 flex gap-8 text-[9px] text-slate-500">
+                    <span><strong class="block text-sm text-ink">1,218+</strong>Opportunities</span>
+                    <span><strong class="block text-sm text-ink">150+</strong>Companies</span>
+                    <span><strong class="block text-sm text-ink">85%</strong>Students placed</span>
+                </div>
+            </div>
+            <div class="mx-auto w-full max-w-sm rounded-lg bg-white p-5 shadow-soft fade-up [animation-delay:120ms]">
+                <div class="mb-4 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <span
+                            class="grid h-8 w-8 place-items-center rounded bg-green-100 text-xs font-bold text-deep">BJ</span>
+                        <span>
+                            <strong class="block text-xs">Buro</strong>
+                            <small class="text-[9px] text-slate-500">Computer science</small>
+                        </span>
+                    </div>
+                    <span class="rounded-full bg-green-50 px-2 py-1 text-[8px] text-brand">Available</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3 text-[9px]">
+                    <div class="rounded bg-mint p-3"><b class="block text-sm text-ink">12</b>Companies</div>
+                    <div class="rounded bg-mint p-3"><b class="block text-sm text-ink">8</b>New roles</div>
+                    <div class="rounded bg-mint p-3"><b class="block text-sm text-ink">7</b>Skills</div>
+                    <div class="rounded bg-mint p-3"><b class="block text-sm text-ink">92%</b>Profile match</div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-9 rounded bg-white p-3 shadow-sm" id="search-area">
+            <form id="searchForm" class="grid gap-2 sm:grid-cols-[1.3fr_1.3fr_auto]">
+                <label class="sr-only" for="keyword">Search internships</label>
+                <input
+                    id="keyword"
+                    class="rounded border border-emerald-200 px-3 py-2 text-[10px] outline-none focus:border-brand"
+                    placeholder="Search internships, skills, or companies"
+                >
+
+                <label class="sr-only" for="location">Location</label>
+                <input
+                    id="location"
+                    class="rounded border border-emerald-200 px-3 py-2 text-[10px] outline-none focus:border-brand"
+                    placeholder="Location"
+                >
+
+                <button
+                    class="rounded bg-brand px-7 py-2 text-[10px] font-bold text-white transition hover:bg-deep"
+                    type="submit"
+                >
+                    Search
+                </button>
+            </form>
+        </section>
+        <section id="opportunities" class="mb-9">
+            <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-sm font-bold">24 Internship Opportunities</h2><button id="showAll"
+                    class="rounded border border-brand px-4 py-1 text-[9px] font-bold text-brand hover:bg-white">Show
+                    All</button>
+            </div>
+            <div id="jobGrid" class="grid gap-4 md:grid-cols-3">
+                <article class="job-card rounded-lg bg-white p-4 shadow-sm" data-job="frontend developer google remote">
+                    <div class="mb-3 flex items-center justify-between"><span
+                            class="grid h-8 w-8 place-items-center rounded bg-green-50 text-xs font-bold text-deep">G</span><i
+                            class="fa-regular fa-bookmark h-4 w-4 text-emerald-500"></i></div>
+                    <h3 class="text-xs font-bold">Frontend Developer</h3>
+                    <p class="mt-1 text-[9px] text-slate-500">Google</p>
+                    <div class="mt-3 flex flex-wrap gap-1 text-[8px]">
+                        <span class="rounded bg-red-50 px-2 py-1 text-red-500">HTML</span>
+                        <span class="rounded bg-blue-50 px-2 py-1 text-blue-600">CSS</span>
+                        <span class="rounded bg-yellow-50 px-2 py-1 text-yellow-700">JavaScript</span>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between"><span class="text-[8px] text-slate-400">Jun
+                            2026</span><button
+                            class="rounded bg-brand px-4 py-1.5 text-[9px] font-bold text-white">Apply</button></div>
+                </article>
+                <article class="job-card rounded-lg bg-white p-4 shadow-sm"
+                    data-job="ux design intern microsoft hybrid">
+                    <div class="mb-3 flex items-center justify-between"><span
+                            class="grid h-8 w-8 place-items-center rounded bg-green-50 text-xs font-bold text-deep">M</span><i
+                            class="fa-regular fa-bookmark h-4 w-4 text-emerald-500"></i></div>
+                    <h3 class="text-xs font-bold">UX Design Intern</h3>
+                    <p class="mt-1 text-[9px] text-slate-500">Microsoft</p>
+                    <div class="mt-3 flex flex-wrap gap-1 text-[8px]">
+                        <span class="rounded bg-red-50 px-2 py-1 text-red-500">Figma</span>
+                        <span class="rounded bg-blue-50 px-2 py-1 text-blue-600">Prototyping</span>
+                        <span class="rounded bg-purple-50 px-2 py-1 text-purple-600">UI/UX</span>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-[8px] text-slate-400">Jan 2026</span>
+                        <button class="rounded bg-brand px-4 py-1.5 text-[9px] font-bold text-white">Apply</button>
+                    </div>
+                </article>
+                <article class="job-card rounded-lg bg-white p-4 shadow-sm" data-job="data analyst intern pwc remote">
+                    <div class="mb-3 flex items-center justify-between">
+                        <span
+                            class="grid h-8 w-8 place-items-center rounded bg-green-50 text-xs font-bold text-deep">S</span>
+                        <i class="fa-regular fa-bookmark h-4 w-4 text-emerald-500"></i>
+                    </div>
+                    <h3 class="text-xs font-bold">Data Analyst Intern</h3>
+                    <p class="mt-1 text-[9px] text-slate-500">PwC</p>
+                    <div class="mt-3 flex flex-wrap gap-1 text-[8px]">
+                        <span class="rounded bg-red-50 px-2 py-1 text-red-500">SQL</span>
+                        <span class="rounded bg-blue-50 px-2 py-1 text-blue-600">Python</span>
+                        <span class="rounded bg-yellow-50 px-2 py-1 text-yellow-700">Excel</span>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-[8px] text-slate-400">Oct 2026</span>
+                        <button class="rounded bg-brand px-4 py-1.5 text-[9px] font-bold text-white">Apply</button>
+                    </div>
+                </article>
+            </div>
+            <p id="emptyState" class="hidden py-8 text-center text-xs text-slate-500">No opportunities match your
+                search.</p>
+        </section>
+        <section id="categories" class="mb-9">
+            <h2 class="mb-4 text-sm font-bold">Career Categories</h2>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-lg bg-white p-4 shadow-sm">
+                    <span class="mb-3 grid h-7 w-7 place-items-center rounded bg-green-50 text-sm text-deep"><i
+                            class="fa-solid fa-computer"></i></span>
+                    <h3 class="text-xs font-bold">Technology</h3>
+                    <p class="mt-2 text-[9px] leading-4 text-slate-500">Explore software, web, and digital careers
+                        powering the modern world.</p>
+                </div>
+                <div class="rounded-lg bg-white p-4 shadow-sm">
+                    <span class="mb-3 grid h-7 w-7 place-items-center rounded bg-yellow-50 text-sm text-amber-500"><i
+                            class="fa-solid fa-palette"></i></span>
+                    <h3 class="text-xs font-bold">Design</h3>
+                    <p class="mt-2 text-[9px] leading-4 text-slate-500">Build skills and experiences that shape how
+                        people interact with the world.</p>
+                </div>
+                <div class="rounded-lg bg-white p-4 shadow-sm">
+                    <span class="mb-3 grid h-7 w-7 place-items-center rounded bg-red-50 text-sm text-red-500"><i
+                            class="fa-solid fa-briefcase"></i></span>
+                    <h3 class="text-xs font-bold">Business</h3>
+                    <p class="mt-2 text-[9px] leading-4 text-slate-500">Develop strategic thinking, communication, and
+                        organizational leadership.</p>
+                </div>
+                <div class="rounded-lg bg-white p-4 shadow-sm">
+                    <span class="mb-3 grid h-7 w-7 place-items-center rounded bg-yellow-50 text-sm text-yellow-600"><i
+                            class="fa-solid fa-bullhorn"></i></span>
+                    <h3 class="text-xs font-bold">Marketing</h3>
+                    <p class="mt-2 text-[9px] leading-4 text-slate-500">Create brand strategies and digital campaigns
+                        that connect with audiences.</p>
+                </div>
+                <div class="rounded-lg bg-white p-4 shadow-sm">
+                    <span class="mb-3 grid h-7 w-7 place-items-center rounded bg-blue-50 text-sm text-blue-600"><i
+                            class="fa-solid fa-chart-column"></i></span>
+                    <h3 class="text-xs font-bold">Data</h3>
+                    <p class="mt-2 text-[9px] leading-4 text-slate-500">Analyze, model, and transform information to
+                        uncover business decisions.</p>
+                </div>
+                <div class="rounded-lg bg-white p-4 shadow-sm">
+                    <span class="mb-3 grid h-7 w-7 place-items-center rounded bg-slate-100 text-sm text-slate-600"><i
+                            class="fa-solid fa-gear"></i></span>
+                    <h3 class="text-xs font-bold">Administration</h3>
+                    <p class="mt-2 text-[9px] leading-4 text-slate-500">Support teams with planning, operations, and
+                        effective organization systems.</p>
+                </div>
+            </div>
+        </section>
+        <section id="resources" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-lg bg-white p-4 shadow-sm">
+                <i class="fa-regular fa-file-lines mb-3 h-5 w-5 text-brand"></i>
+                <h3 class="text-xs font-bold">CV Preparation</h3>
+                <p class="mt-2 text-[9px] leading-4 text-slate-500">Learn how to write a clear and compelling CV for an
+                    internship application.</p>
+                <button class="mt-4 w-full rounded border border-emerald-200 py-2 text-[9px] font-bold text-brand">Read
+                    More</button>
+            </div>
+            <div class="rounded-lg bg-white p-4 shadow-sm">
+                <i class="fa-solid fa-link mb-3 h-5 w-5 text-brand"></i>
+                <h3 class="text-xs font-bold">Interview Tips</h3>
+                <p class="mt-2 text-[9px] leading-4 text-slate-500">Prepare for common questions and build confidence
+                    before your interview day.</p>
+                <button class="mt-4 w-full rounded border border-emerald-200 py-2 text-[9px] font-bold text-brand">Read
+                    More</button>
+            </div>
+            <div class="rounded-lg bg-white p-4 shadow-sm">
+                <i class="fa-solid fa-lightbulb mb-3 h-5 w-5 text-brand"></i>
+                <h3 class="text-xs font-bold">Career Advice</h3>
+                <p class="mt-2 text-[9px] leading-4 text-slate-500">Get practical guidance for choosing the right path
+                    and making smart decisions.</p>
+                <button class="mt-4 w-full rounded border border-emerald-200 py-2 text-[9px] font-bold text-brand">Read
+                    More</button>
+            </div>
+            <div class="rounded-lg bg-white p-4 shadow-sm">
+                <i class="fa-solid fa-wand-sparkles mb-3 h-5 w-5 text-brand"></i>
+                <h3 class="text-xs font-bold">Skill Development</h3>
+                <p class="mt-2 text-[9px] leading-4 text-slate-500">Explore practical learning paths to strengthen your
+                    professional skill set.</p>
+                <button class="mt-4 w-full rounded border border-emerald-200 py-2 text-[9px] font-bold text-brand">Read
+                    More</button>
+            </div>
+        </section>
+        <section
+            class="mt-8 flex flex-col items-start justify-between gap-4 rounded-lg bg-deep px-5 py-4 text-white sm:flex-row sm:items-center">
+            <div>
+                <h2 class="text-sm font-bold">Ready to Start Your Career Journey?</h2>
+                <p class="mt-1 text-[9px] text-emerald-100">Take the next step with internship opportunities and
+                    skill-building resources.</p>
+            </div>
+            <a href="#search-area"
+                class="rounded bg-brand px-9 py-2 text-[10px] font-bold text-white hover:bg-emerald-400">Explore
+                Internships</a>
+        </section>
+    </main>
+    <footer id="profile" class="bg-black px-5 py-5 text-white">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
+            <img src="images/logo.png" alt="Career Guide" class="h-8 w-auto brightness-125">
+            <div class="flex gap-6 text-[9px] text-slate-300">
+                <a href="./index.html">Home</a>
+                <a href="#opportunities">Internship</a>
+                <a href="./categories">Career</a>
+                <a href="#resources">Resources</a>
+                <a href="./profile">My Profile</a>
+            </div>
+        </div>
+    </footer>
+<script src="./src/main.js"></script>
+</body>
+
+</html>

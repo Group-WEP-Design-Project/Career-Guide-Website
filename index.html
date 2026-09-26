@@ -16,59 +16,43 @@
             <a href="./index.html">
                 <img src="./images/head-logo.png" alt="Career Guide Logo" class="h-10 w-auto object-contain">
             </a>
-            <div class="hidden items-center gap-6 md:flex">
-                <a href="./index.html" class="font-semibold text-[#159a8c]">
-                    Home
-                </a>
-                <a href="./opportunities.html" class="font-semibold transition hover:text-[#159a8c]">
-                    Internship
-                </a>
-                <a href="./categories.html" class="font-semibold transition hover:text-[#159a8c]">
-                    Career
-                </a>
-                <a href="./resources.html" class="font-semibold transition hover:text-[#159a8c]">
-                    Resources
-                </a>
-                <a href="./profile.html" class="font-semibold transition hover:text-[#159a8c]">
-                    My Profile
-                </a>
+
+            <div class="hidden items-center gap-6 lg:flex">
+                <a href="./index.html" class="font-semibold text-[#159a8c]">Home</a>
+                <a href="./internshipship.html" class="font-semibold transition hover:text-[#159a8c]">Internship</a>
+                <a href="./categories.html" class="font-semibold transition hover:text-[#159a8c]">Career</a>
+                <a href="./resources.html" class="font-semibold transition hover:text-[#159a8c]">Resources</a>
+                <a href="./profile.html" class="font-semibold transition hover:text-[#159a8c]">My Profile</a>
                 <button type="button"
                     class="rounded-xl border border-[#159a8c] px-5 py-2 font-semibold text-[#159a8c] transition hover:bg-[#159a8c] hover:text-white">
                     Login
                 </button>
             </div>
-            <button id="mobile-menu-button" type="button" class="rounded-xl border border-slate-200 p-2.5 md:hidden"
-                aria-label="Open menu" aria-expanded="false">
 
-                <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white md:hidden">
-            <div class="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4">
-                <a href="./index.html" class="rounded-lg px-4 py-3 text-sm text-[#159a8c] hover:bg-slate-50">
-                    Home
-                </a>
-                <a href="./opportunities.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">
-                    Internship
-                </a>
-                <a href="./categories.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">
-                    Career
-                </a>
-                <a href="./resources.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">
-                    Resources
-                </a>
-                <a href="./profile.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">
-                    My Profile
-                </a>
-                <button type="button"
-                    class="mt-2 rounded-xl border border-[#159a8c] px-4 py-3 font-semibold text-[#159a8c] transition hover:bg-[#159a8c] hover:text-white">
+            <div class="flex items-center gap-3 lg:hidden">
+                <button type="button" class="rounded-xl border border-[#159a8c] px-5 py-2 font-semibold text-[#159a8c]">
                     Login
                 </button>
+
+                <button id="mobile-menu-button" type="button" class="rounded-xl bg-slate-50 p-2.5"
+                    aria-label="Open menu" aria-expanded="false">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white lg:hidden">
+            <div class="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4">
+                <a href="./index.html" class="rounded-lg px-4 py-3 text-sm text-[#159a8c] hover:bg-slate-50">Home</a>
+                <a href="./internshipship.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">Internship</a>
+                <a href="./categories.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">Career</a>
+                <a href="./resources.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">Resources</a>
+                <a href="./profile.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">My Profile</a>
             </div>
         </div>
     </nav>
     <section class="mx-auto max-w-[694px] pt-[46px]">
-        <div class="grid grid-cols-[1fr_243px] items-center gap-7">
+        <div class="grid grid-cols-1 items-center gap-7 md:grid-cols-[1fr_243px]">
             <div>
                 <span class="inline-block rounded-full bg-[#d0f8d6]
                     px-3 py-2 text-[10px] font-medium text-[#159a8c]">
@@ -81,7 +65,7 @@
                 </h1>
                 <p class="mt-3 max-w-[340px] text-[14px]
                     leading-[1.4] text-slate-500">
-                    Discover internship opportunities,explore career paths, and develop the
+                    Discover internship opportunities, explore career paths, and develop the
                     skills you need for your future career.
                 </p>
                 <div class="mt-4 flex gap-6">
@@ -127,16 +111,15 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <div class="flex h-10 w-10 items-center
-                            justify-center rounded-xl bg-[#c8f9d0]
-                            text-[14px] font-bold text-[#159a8c]">
-                            BJ
+                            justify-center rounded-xl bg-[#c8f9d0]">
+                            <img src="./images/profile.jpg" alt="User Avatar" class="h-8 w-8 rounded-full object-cover">
                         </div>
                         <div>
                             <h3 class="text-[14px] font-bold">
-                                Bora
+                                Sa Em
                             </h3>
                             <p class="text-[10px] text-slate-500">
-                                Computer Science
+                                Web programming
                             </p>
                         </div>
                     </div>
@@ -167,10 +150,10 @@
         </div>
     </section>
     <section class="mx-auto mt-[54px] max-w-[694px]">
-        <div class="grid grid-cols-[1fr_1fr_143px] gap-2
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-[1fr_1fr_143px]
             rounded-lg bg-white p-3">
             <input type="text" placeholder="Search internships, skills, or companies"
-                class="h-8 rounded-lg border border-[#43d47c]px-3 text-[9px] outline-none">
+                class="h-8 rounded-lg border border-[#43d47c] px-3 text-[9px] outline-none">
             <input type="text" placeholder="Location" class="h-8 rounded-lg border border-[#43d47c]
                 px-3 text-[9px] outline-none">
             <button type="button" class="h-8 rounded-lg bg-[#19bd5d]
@@ -181,98 +164,95 @@
     </section>
     <section class="mx-auto mt-[41px] max-w-[694px]">
         <div class="mb-5 flex items-center justify-between">
-            <h2 class="text-[15px] font-bold">
-                24 Internship Opportunities
-            </h2>
-            <a href="./opportunities.html" class="rounded-lg border border-[#19bd5d]
-                px-10 py-2 text-[9px] font-semibold
-                text-[#159a8c]">
+            <h2 class="text-[15px] font-bold">Career Opportunities</h2>
+            <a href="./opportunities.html" class="text-[10px] font-semibold text-[#159a8c] hover:underline">
                 View All
             </a>
         </div>
-        <div class="grid grid-cols-3 gap-[13px]">
-            <article class="rounded-2xl bg-white p-4">
+        <div class="grid grid-cols-1 gap-[13px] sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Smart Axiata -->
+            <article class="rounded-2xl bg-white p-4 shadow-sm">
                 <div class="flex items-center justify-between">
-                    <div class="flex h-9 w-9 items-center justify-center
-                        rounded-xl bg-[#e6fae9] text-[13px] font-bold">
-                        G
-                    </div>
-                    <button type="button" class="flex h-6 w-6 items-center
-                        justify-center rounded-md border
-                        border-[#19bd5d] text-[11px]
-                        text-[#19bd5d]">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                </div>
-                <h3 class="mt-3 text-[14px] font-semibold">
-                    Frontend Developer
-                    <br>
-                    Intern
-                </h3>
-                <p class="mt-1 text-[9px] text-slate-500">
-                    Google
-                </p>
-                <div class="mt-2 flex items-center gap-2 text-[8px] text-slate-500">
-                    <span>
-                        <i class="fa-solid fa-location-dot text-red-500"></i>
-                        Ho Chi Minh City
-                    </span>
-                    <span>
-                        <i class="fa-solid fa-briefcase"></i>
-                        Hybrid
-                    </span>
-                    <span>
-                        <i class="fa-solid fa-calendar"></i>
-                        3 months
-                    </span>
-                </div>
-                <div class="mt-2 flex gap-1">
-                    <span class="rounded-full bg-slate-100 px-2 py-1 text-[8px]">
-                        HTML
-                    </span>
-                    <span class="rounded-full bg-slate-100 px-2 py-1 text-[8px]">
-                        CSS
-                    </span>
-                    <span class="rounded-full bg-slate-100 px-2 py-1 text-[8px]">
-                        React
-                    </span>
+                    <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e6fae9]
+                    text-[13px] font-bold text-[#159a8c]">S</div>
+                    <span class="text-[8px] text-[#159a8c]">Official</span>
+                </div <h3 class="mt-3 text-[14px] font-semibold">Internship Program</h3>
+                <p class="mt-1 text-[9px] text-slate-500">Smart Axiata</p>
+                <div class="mt-2 flex gap-3 text-[8px] text-slate-500">
+                    <span><i class="fa-solid fa-location-dot text-red-500"></i> Phnom Penh</span>
+                    <span><i class="fa-solid fa-building"></i> Telecom</span>
                 </div>
                 <div class="mt-3 flex items-center justify-between">
-                    <span class="text-[8px] text-orange-500">
-                        Deadline: 25 Jun
-                    </span>
-                    <a href="#" class="rounded-lg border border-[#19bd5d]
-                        px-3 py-1.5 text-[8px] font-semibold
-                        text-[#159a8c]">
+                    <span class="text-[8px] text-[#159a8c]">Internship</span>
+                    <a href="https://www.smart.com.kh/life-at-smart" target="_blank" rel="noopener noreferrer"
+                        class="rounded-lg border border-[#19bd5d] px-3 py-1.5 text-[8px] font-semibold text-[#159a8c]">
                         View Details
                     </a>
                 </div>
-                <a href="#" class="mt-2 block rounded-lg bg-[#19bd5d]
-                    py-2 text-center text-[9px] font-semibold text-white">
-                    Apply
+                <a href="https://www.smart.com.kh/careers" target="_blank" rel="noopener noreferrer"
+                    class="mt-2 block rounded-lg bg-[#19bd5d] py-2 text-center text-[9px] font-semibold text-white">
+                    Apply / Careers
                 </a>
             </article>
-            <article class="rounded-2xl bg-white p-4">
+            <!-- Prudential Cambodia -->
+            <article class="rounded-2xl bg-white p-4 shadow-sm">
                 <div class="flex items-center justify-between">
-                    <div class="flex h-9 w-9 items-center justify-center
-                        rounded-xl bg-[#e6fae9] text-[13px] font-bold">
-                        M
-                    </div>
-                    <button type="button" class="flex h-6 w-6 items-center
-                        justify-center rounded-md border
-                        border-[#19bd5d] text-[11px]<div class=" mt-3 flex items-center justify-between">
-                        <span class="text-[8px] text-orange-500">
-                            Deadline: 02 Jul
-                        </span>
-                        <a href="#" class="rounded-lg border border-[#19bd5d]
-                        px-3 py-1.5 text-[8px] font-semibold
-                        text-[#159a8c]">
-                            View Details
-                        </a>
+                    <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e6fae9]
+                    text-[13px] font-bold text-[#159a8c]">P</div>
+                    <span class="text-[8px] text-[#159a8c]">Official</span>
                 </div>
-                <a href="#" class="mt-2 block rounded-lg bg-[#19bd5d]
-                    py-2 text-center text-[9px] font-semibold text-white">
-                    Apply
+                <h3 class="mt-3 text-[14px] font-semibold">Career Opportunities</h3>
+                <p class="mt-1 text-[9px] text-slate-500">Prudential Cambodia</p>
+
+                <div class="mt-2 flex gap-3 text-[8px] text-slate-500">
+                    <span>📍 Phnom Penh</span>
+                    <span>💼 Careers</span>
+                </div>
+
+                <div class="mt-2 flex gap-1">
+                    <span class="rounded-full bg-slate-100 px-2 py-1 text-[8px]">Business</span>
+                    <span class="rounded-full bg-slate-100 px-2 py-1 text-[8px]">Finance</span>
+                </div>
+                <div class="mt-3 flex items-center justify-between">
+                    <span class="text-[8px] text-[#159a8c]">Open roles</span>
+                    <a href="https://www.prudential.com.kh/en/work-with-us/corporate-career/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="rounded-lg border border-[#19bd5d] px-3 py-1.5 text-[8px] font-semibold text-[#159a8c]">
+                        View Details
+                    </a>
+                </div>
+                <a href="https://www.prudential.com.kh/en/work-with-us/corporate-career/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-2 block rounded-lg bg-[#19bd5d] py-2 text-center text-[9px] font-semibold text-white">
+                    View Careers
+                </a>
+            </article>
+            <!-- PassApp -->
+            <article class="rounded-2xl bg-white p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e6fae9]
+                    text-[13px] font-bold text-[#159a8c]">P</div>
+                    <span class="text-[8px] text-[#159a8c]">Official</span>
+                </div>
+
+                <h3 class="mt-3 text-[14px] font-semibold">Job Opportunities</h3>
+                <p class="mt-1 text-[9px] text-slate-500">PassApp Technologies</p>
+
+                <div class="mt-2 flex gap-3 text-[8px] text-slate-500">
+                    <span><i class="fa-solid fa-location-dot text-red-500"></i> Phnom Penh</span>
+                    <span><i class="fa-solid fa-building"></i> E-commerce</span>
+                </div>
+
+                <div class="mt-3 flex items-center justify-between">
+                    <span class="text-[8px] text-[#159a8c]">Careers</span>
+                    <a href="https://www.passapptaxis.com/careers" target="_blank" rel="noopener noreferrer"
+                        class="rounded-lg border border-[#19bd5d] px-3 py-1.5 text-[8px] font-semibold text-[#159a8c]">
+                        View Details
+                    </a>
+                </div>
+                <a href="https://www.passapptaxis.com/careers" target="_blank" rel="noopener noreferrer"
+                    class="mt-2 block rounded-lg bg-[#19bd5d] py-2 text-center text-[9px] font-semibold text-white">
+                    Apply / Careers
                 </a>
             </article>
         </div>
@@ -281,7 +261,7 @@
         <h2 class="mb-5 text-[15px] font-bold">
             Career Categories
         </h2>
-        <div class="grid grid-cols-3 gap-[13px]">
+        <div class="grid grid-cols-1 gap-[13px] sm:grid-cols-2 lg:grid-cols-3">
             <a href="./categories.html" class="rounded-xl bg-white p-4">
                 <div class="flex h-10 w-10 items-center justify-center
                     rounded-xl bg-[#e6fae9] text-xl">
@@ -362,7 +342,7 @@
         </div>
     </section>
     <section class="mx-auto mt-[18px] max-w-[694px]">
-        <div class="grid grid-cols-3 gap-[13px]">
+        <div class="grid grid-cols-1 gap-[13px] sm:grid-cols-2 lg:grid-cols-3">
             <article class="rounded-xl bg-white p-4">
                 <div class="flex h-10 w-10 items-center justify-center
                     rounded-xl bg-[#e6fae9] text-lg">

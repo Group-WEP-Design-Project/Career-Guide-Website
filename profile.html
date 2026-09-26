@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Internship & Career Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-[#e9ffed] font-[Poppins] text-slate-900">
+    <nav class="border-b border-slate-200 bg-white/95">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+            <a href="./index.html">
+                <img src="./images/head-logo.png" alt="Career Guide Logo" class="h-10 w-auto object-contain">
+            </a>
+            <div class="hidden items-center gap-6 lg:flex">
+                <a href="./index.html" class="font-semibold transition hover:text-[#159a8c]">Home</a>
+                <a href="./internshipship.html" class="font-semibold transition hover:text-[#159a8c]">Internship</a>
+                <a href="./categories.html" class="font-semibold transition hover:text-[#159a8c]">Career</a>
+                <a href="./resources.html" class="font-semibold transition hover:text-[#159a8c]">Resources</a>
+                <a href="./profile.html" class="font-semibold text-[#159a8c]">My Profile</a>
+                <button type="button"
+                    class="rounded-xl border border-[#159a8c] px-5 py-2 font-semibold text-[#159a8c] transition hover:bg-[#159a8c] hover:text-white">
+                    Login
+                </button>
+            </div>
+            <div class="flex items-center gap-3 lg:hidden">
+                <button type="button" class="rounded-xl border border-[#159a8c] px-5 py-2 font-semibold text-[#159a8c]">
+                    Login
+                </button>
+                <button id="mobile-menu-button" type="button" class="rounded-xl bg-slate-50 p-2.5"
+                    aria-label="Open menu" aria-expanded="false">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white lg:hidden">
+            <div class="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4">
+                <a href="./index.html" class="rounded-lg px-4 py-3 text-sm text-[#159a8c] hover:bg-slate-50">Home</a>
+                <a href="./internshipship.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">Internship</a>
+                <a href="./categories.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">Career</a>
+                <a href="./resources.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">Resources</a>
+                <a href="./profile.html" class="rounded-lg px-4 py-3 text-sm hover:bg-slate-50">My Profile</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Profile Header -->
+        <section class="border-b bg-white px-5 py-10">
+            <div class="mx-auto max-w-6xl">
+                <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                    <div class="flex items-center gap-4">
+                        <img src="./images/borey.png" alt="Borey Moeun" class="h-20 w-20 rounded-full object-cover">
+                        <div>
+                            <h1 class="text-2xl font-bold">Borey Moeun</h1>
+                            <p class="text-sm text-slate-500">PNC</p>
+                            <p class="text-sm text-slate-500">Web Programming</p>
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="rounded-lg border border-slate-200 px-5 py-2 text-sm font-semibold hover:bg-slate-50">
+                        Edit Profile
+                    </button>
+                </div>
+                <div class="mt-8 rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="mb-3 font-bold">About Me</h2>
+                    <p class="text-sm leading-7 text-slate-500">
+                        I am a motivated and curious Computer Science student who is passionate about web development,
+                        design, and building practical digital solutions. I enjoy learning new skills, growing through
+                        internships, and developing my career path with real-world experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Personal Information & Skills -->
+        <section class="mx-auto max-w-6xl px-5 py-6">
+            <div class="grid gap-5 lg:grid-cols-2">
+                <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="mb-5 font-bold">Personal Information</h2>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">Full Name</span>
+                            <strong>Borey Moeun</strong>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">Email</span>
+                            <strong>borey.samath@gmail.com</strong>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">Phone</span>
+                            <strong>+855 12 345 678</strong>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">Location</span>
+                            <strong>Phnom Penh, Cambodia</strong>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <span class="text-slate-500">Education</span>
+                            <strong class="text-right">Bachelor of Computer Science</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="mb-5 font-bold">Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="rounded-full bg-[#e6fae9] px-3 py-1.5 text-sm text-[#159a8c]">HTML ×</span>
+                        <span class="rounded-full bg-[#e6fae9] px-3 py-1.5 text-sm text-[#159a8c]">CSS ×</span>
+                        <span class="rounded-full bg-[#e6fae9] px-3 py-1.5 text-sm text-[#159a8c]">JavaScript ×</span>
+                        <span class="rounded-full bg-[#e6fae9] px-3 py-1.5 text-sm text-[#159a8c]">Python ×</span>
+                        <span class="rounded-full bg-[#e6fae9] px-3 py-1.5 text-sm text-[#159a8c]">UI/UX ×</span>
+                        <span class="rounded-full bg-[#e6fae9] px-3 py-1.5 text-sm text-[#159a8c]">
+                            Communication ×
+                        </span>
+                    </div>
+                    <button type="button"
+                        class="mt-5 rounded-lg bg-[#159a8c] px-4 py-2 text-sm font-semibold text-white hover:bg-[#0f766e]">
+                        Add Skill
+                    </button>
+                </div>
+            </div>
+        </section <!-- CV & Application Status -->
+        <section class="mx-auto max-w-6xl px-5 pb-6">
+            <div class="grid gap-5 lg:grid-cols-2">
+                <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="mb-5 font-bold">CV Section</h2>
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                            <strong>Current CV</strong>
+                            <p class="text-sm text-slate-500">borey-samath-cv.pdf</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <button type="button" class="rounded-lg border px-3 py-2 text-xs hover:bg-slate-50">
+                                Upload CV
+                            </button>
+                            <button type="button" class="rounded-lg border px-3 py-2 text-xs hover:bg-slate-50">
+                                Replace CV
+                            </button>
+                            <button type="button"
+                                class="rounded-lg bg-[#159a8c] px-3 py-2 text-xs font-semibold text-white">
+                                Download CV
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="mb-5 font-bold">Application Status</h2>
+                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                        <div class="rounded-lg bg-[#e6fae9] p-3 text-center text-xs font-semibold text-[#159a8c]">
+                            Applied
+                        </div>
+                        <div class="rounded-lg bg-[#159a8c] p-3 text-center text-xs font-semibold text-white">
+                            Reviewing
+                        </div>
+                        <div class="rounded-lg bg-slate-100 p-3 text-center text-xs text-slate-500">
+                            Interview
+                        </div>
+                        <div class="rounded-lg bg-slate-100 p-3 text-center text-xs text-slate-500">
+                            Accepted
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Saved & Applied Internships -->
+        <section class="mx-auto max-w-6xl px-5 pb-6">
+            <div class="grid gap-5 lg:grid-cols-2">
+                <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="font-bold">Saved Internships</h2>
+                    <div class="mt-4 rounded-xl border p-4">
+                        <h3 class="font-semibold">Frontend Developer Intern</h3>
+                        <p class="mt-1 text-sm text-slate-500">Google</p>
+
+                        <div class="my-4 flex gap-4 text-xs text-slate-500">
+                            <span>📍 HCMC</span>
+                            <span>📅 12 Jun 2026</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button type="button" class="rounded-lg border px-4 py-2 text-xs hover:bg-slate-50">
+                                View Details
+                            </button>
+                            <button type="button"
+                                class="rounded-lg bg-[#159a8c] px-4 py-2 text-xs font-semibold text-white">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h2 class="mb-4 font-bold">Applied Internships</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full min-w-[500px] text-left text-xs">
+                            <thead class="border-b text-slate-500">
+                                <tr>
+                                    <th class="pb-3">Internship</th>
+                                    <th class="pb-3">Company</th>
+                                    <th class="pb-3">Date</th>
+                                    <th class="pb-3">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr>
+                                    <td class="py-3">Frontend Developer</td>
+                                    <td>Google</td>
+                                    <td>10 Jun 2026</td>
+                                    <td>
+                                        <span class="rounded-full bg-amber-50 px-2 py-1 text-amber-600">
+                                            Reviewing
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">UX Design Intern</td>
+                                    <td>Microsoft</td>
+                                    <td>12 Jun 2026</td>
+                                    <td>
+                                        <span class="rounded-full bg-blue-50 px-2 py-1 text-blue-600">
+                                            Interview
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">Data Analyst Intern</td>
+                                    <td>Shopify</td>
+                                    <td>17 Jun 2026</td>
+                                    <td>
+                                        <span class="rounded-full bg-[#e6fae9] px-2 py-1 text-[#159a8c]">
+                                            Accepted
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Account Settings -->
+        <section class="mx-auto max-w-6xl px-5 pb-10">
+            <div class="rounded-2xl border bg-white p-6 shadow-sm">
+                <h2 class="font-bold">Account Settings</h2 <div class="mt-5 flex flex-wrap gap-2">
+                <button type="button" class="rounded-lg border px-4 py-2 text-sm hover:bg-slate-50">
+                    Edit Profile
+                </button>
+                <button type="button" class="rounded-lg border px-4 py-2 text-sm hover:bg-slate-50">
+                    Change Password
+                </button>
+                <button type="button" class="rounded-lg border px-4 py-2 text-sm hover:bg-slate-50">
+                    Notification Settings
+                </button>
+                <button type="button"
+                    class="rounded-lg bg-red-50 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-100">
+                    Logout
+                </button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black">
+        <div class="mx-auto flex max-w-[694px] items-center justify-between py-4">
+            <img src="./images/foot-logo.jpg" alt="Career Guide" class="w-[145px]">
+            <div class="flex gap-6 text-[9px] text-white">
+                <a href="./index.html">Home</a>
+                <a href="./opportunities.html">Internship</a>
+                <a href="./categories.html">Career</a>
+                <a href="./resources.html">Resources</a>
+                <a href="./profile.html">My Profile</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
